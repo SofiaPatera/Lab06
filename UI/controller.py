@@ -28,4 +28,10 @@ class Controller:
         self._view.update()
 
     # Altre Funzioni Event Handler
-    # TODO
+    def conferma_automobile(self,e):
+        self._model.cerca_automobili_per_modello = self._view.input_modello_auto.value
+        self._view.txt_cerca_automobili_per_modello.value = f"Cerca: {self._model.cerca_automobili_per_modello}"
+        self._view.update()
+
+    def mostra(self, e):
+        self._model

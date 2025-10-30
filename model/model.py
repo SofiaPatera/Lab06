@@ -31,6 +31,7 @@ class Autonoleggio:
         self._responsabile = responsabile
 
     def get_automobili(self) -> list[Automobile] | None:
+
         """
             Funzione che legge tutte le automobili nel database
             :return: una lista con tutte le automobili presenti oppure None
